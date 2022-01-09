@@ -1,5 +1,6 @@
 console.log("Hello World!")
 
+
 // Variables ###################################################
 
 let firstName = "Sufi"
@@ -8,6 +9,7 @@ let lastName = "Bayazid"
 let message = `Hi, ${firstName} ${lastName}!`
 
 console.log(message)
+
 
 // Constant ####################################################
 
@@ -21,6 +23,7 @@ message = `Your money after ${noOfYears} years: ${totalMoney}`
 
 console.log(message)
 
+
 // Data Types ##################################################
 // 1. Premitives / Valur Types
 //    i.   String
@@ -33,6 +36,7 @@ console.log(message)
 //    i.   Objects
 //    ii.  Array
 //    iii. Functions
+
 
 // Objects #####################################################
 
@@ -54,5 +58,40 @@ let person = {
 };
 
 console.log(person);
-console.log("Hi " +person["name"] + ",");
-console.log("You are from: " + person.address.country);
+console.log("Hi " +person["name"] + ","); // Bracket Notation
+console.log("You are from: " + person.address.country); // Dot notation
+
+
+// if else #####################################################
+
+if(person.age > 18){
+    console.log("You are adult!");
+}
+else{
+    console.log("You are not an adult yet!");
+}
+
+
+// For Loop ####################################################
+
+let nameOfAttributes = '';
+for (key in person){
+    nameOfAttributes += key + ' ';
+}
+
+console.log(`Person Object has ${nameOfAttributes}attributes.`);
+
+for (let i=0; i<5; i++){
+    console.log(i+1);
+}
+
+
+// Array #######################################################
+
+let cities = ['Dhaka', 'B-Baria', 'Sylhet', 'Chittagong', 'Rajshahi', 'Rangpur', 'Jeshore', 'Khulna', 'Chandpur'];
+
+cities.sort();
+
+cities.forEach(element => {
+    console.log(element)
+});
