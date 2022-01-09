@@ -86,6 +86,15 @@ for (let i=0; i<5; i++){
 }
 
 
+// While Loop ####################################################
+
+let x = 5;
+while(x > 0){
+    if(x % 2 == 0) console.log('Even Number');
+    else console.log('Odd Number');
+    x--;
+}
+
 // Array #######################################################
 
 let cities = ['Dhaka', 'B-Baria', 'Sylhet', 'Chittagong', 'Rajshahi', 'Rangpur', 'Jeshore', 'Khulna', 'Chandpur'];
@@ -95,3 +104,40 @@ cities.sort();
 cities.forEach(element => {
     console.log(element)
 });
+
+
+// Set #########################################################
+
+const letters = new Set();
+
+letters.add('z');
+letters.add('a');
+letters.add('b');
+letters.add('c');
+letters.delete('z');
+letters.add('d');
+letters.add('e');
+
+let text = '';
+for (const x of letters.values()) {
+    text += x + ' ';
+}
+
+console.log(text);
+
+// Map #########################################################
+// Create a Map
+const fruits = new Map([
+    ["apples", 400],
+    ["bananas", 200],
+    ["oranges", 350]
+  ]);
+
+  // Update 
+  fruits.set("orange", 300);
+
+  // Get
+  fruits.get("apple");
+
+  // Delete
+  fruits.delete("apples");
