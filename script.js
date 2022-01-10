@@ -131,13 +131,13 @@ const fruits = new Map([
     ["apples", 400],
     ["bananas", 200],
     ["oranges", 350]
-  ]);
+]);
 
-  // Update 
-  fruits.set("orange", 300);
+// Update 
+fruits.set("orange", 300);
 
-  // Get
-  fruits.get("apple");
+// Get
+console.log(fruits.get("apples"));
 
-  // Delete
-  fruits.delete("apples");
+// Delete
+fruits.delete("apples");
