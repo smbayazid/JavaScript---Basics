@@ -141,3 +141,21 @@ console.log(fruits.get("apples"));
 
 // Delete
 fruits.delete("apples");
+
+// Function ####################################################
+
+function sum(a, b){
+    return a + b;
+}
+
+// ES5 arrow function
+let multiply = function(x, y) {
+    return x * y;
+}
+
+// ES6 arrow function
+const square = (x) => x * x;
+
+console.log("2 + 3 =", sum(2,3));
+console.log("2 X 3 =", multiply(2,3));
+console.log("5 ^ 2 =", square(5));
